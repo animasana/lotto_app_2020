@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lotto_app_2020/precache-manifest.a22f6696208c316510afd8de9ba6e6ba.js"
+  "/lotto_app_2020/precache-manifest.4eaeb798e43c37f8f2fe853c5d964a9c.js"
 );
 
 self.addEventListener('message', (event) => {
