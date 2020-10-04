@@ -24,7 +24,7 @@ class LottoReact extends React.Component {
         const {lottoString} = this.state;
 
         return (                        
-            <div>
+            <React.Fragment>
                 <div className="lottoStyle">
                     <span>{yyyy}년 {mm}월 {dd}일</span>            
                     <hr />
@@ -37,7 +37,7 @@ class LottoReact extends React.Component {
                 <div className="buttonStyle">
                     <button onClick={this.clickHandler}>로또 재발행</button>
                 </div>                        
-            </div>
+            </React.Fragment>
         )        
     }
 }
