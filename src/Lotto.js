@@ -15,7 +15,7 @@ export default class Lotto {
         }
         
         for (let i = 0; i < this.lottoMatrix.length; i++) {
-            let initSeq = Array(this.nSize).fill().map((_, index) => index + 1);
+            const initSeq = Array(this.nSize).fill().map((_, index) => index + 1);
             for (let j = 0; j < this.lottoMatrix[i].length; j++)
                 this.lottoMatrix[i][j] = initSeq.splice(
                     Math.floor(initSeq.length * Math.random()), 1)[0];
@@ -35,8 +35,7 @@ export default class Lotto {
             return n.length >= fig ? n : new Array(fig - n.length + 1).join('0') + n;
         }
         
-        return this.lottoMatrix
-            .map(aRow => aRow.map(num => pad(num, fig)).join(' ')).join('\n');        
+        return this.lottoMatrix.map(aRow => aRow.map(num => pad(num, fig)).join(' ')).join('\n');        
     }
 
     getLottoString() {
