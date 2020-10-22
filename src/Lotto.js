@@ -16,16 +16,15 @@ export default class Lotto {
         
         for (let i = 0; i < this.lottoMatrix.length; i++) {
             const initSeq = Array(this.nSize).fill().map((_, index) => index + 1);
-            for (let j = 0; j < this.lottoMatrix[i].length; j++)
-                this.lottoMatrix[i][j] = initSeq.splice(
-                    Math.floor(initSeq.length * Math.random()), 1)[0];
+            for (let j = 0; j < this.lottoMatrix[i].length; j++) {
+                let drawnIndex = Math.floor(initSeq.length * Math.random());
+                this.lottoMatrix[i][j] = initSeq.splice(drawnIndex, 1)[0];
+            }
         }        
     }
     
     sort() {
-        for (const aRow of this.lottoMatrix) {
-            aRow.sort((first, second) => first - second);
-        }        
+        this.lottoMatrix.forEach(aRow => aRow.sort((a, b) => a - b));
     }
 
     matrixToString() {
@@ -38,7 +37,7 @@ export default class Lotto {
         return this.lottoMatrix.map(aRow => aRow.map(num => pad(num, fig)).join(' ')).join('\n');        
     }
 
-    getLottoString() {
+    str() {
         try {
             this.sample();
             this.sort();
@@ -48,8 +47,4 @@ export default class Lotto {
             return '' + e;
         }        
     }
-
-    logB(base, x) {
-        return Math.log(x) / Math.log(base);
-    }    
 }

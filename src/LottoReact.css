@@ -1,7 +1,7 @@
 .lottoStyle {
     margin: 0 auto;
     border: 1px solid black;
-    padding: 20;
+    padding: 8px;
     width: 150px;
     height: 100%;
     text-align: center;
@@ -9,7 +9,7 @@
 
 .buttonStyle {
     margin: 0 auto;
-    padding: 8;
+    padding: 8px;
     width: 100px;
     height: 50%;
     text-align: center;
