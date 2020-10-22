@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c03e48798df8f13623e5401293064a3b",
+    "revision": "145da27515bd7ef669bdfba828c30715",
     "url": "/lotto_app_2020/index.html"
   },
   {
-    "revision": "dc6c6514a31aa225425e",
-    "url": "/lotto_app_2020/static/css/main.90ffa5fb.chunk.css"
+    "revision": "ca7181a436924b3310e5",
+    "url": "/lotto_app_2020/static/css/main.01ecd652.chunk.css"
   },
   {
     "revision": "d02c59e775777c173e08",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lotto_app_2020/static/js/2.418a9b3e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dc6c6514a31aa225425e",
-    "url": "/lotto_app_2020/static/js/main.bdaa5e8a.chunk.js"
+    "revision": "ca7181a436924b3310e5",
+    "url": "/lotto_app_2020/static/js/main.4bae8e0e.chunk.js"
   },
   {
     "revision": "d781d4ea9b5677098aaf",

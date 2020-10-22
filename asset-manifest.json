@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/lotto_app_2020/static/css/main.90ffa5fb.chunk.css",
-    "main.js": "/lotto_app_2020/static/js/main.bdaa5e8a.chunk.js",
-    "main.js.map": "/lotto_app_2020/static/js/main.bdaa5e8a.chunk.js.map",
+    "main.css": "/lotto_app_2020/static/css/main.01ecd652.chunk.css",
+    "main.js": "/lotto_app_2020/static/js/main.4bae8e0e.chunk.js",
+    "main.js.map": "/lotto_app_2020/static/js/main.4bae8e0e.chunk.js.map",
     "runtime-main.js": "/lotto_app_2020/static/js/runtime-main.3eaefa46.js",
     "runtime-main.js.map": "/lotto_app_2020/static/js/runtime-main.3eaefa46.js.map",
     "static/js/2.418a9b3e.chunk.js": "/lotto_app_2020/static/js/2.418a9b3e.chunk.js",
     "static/js/2.418a9b3e.chunk.js.map": "/lotto_app_2020/static/js/2.418a9b3e.chunk.js.map",
     "index.html": "/lotto_app_2020/index.html",
-    "precache-manifest.1768ae3176526fb2839b5270fbe55f02.js": "/lotto_app_2020/precache-manifest.1768ae3176526fb2839b5270fbe55f02.js",
+    "precache-manifest.247bfc33b8deb282eb4e0c2276ed1574.js": "/lotto_app_2020/precache-manifest.247bfc33b8deb282eb4e0c2276ed1574.js",
     "service-worker.js": "/lotto_app_2020/service-worker.js",
-    "static/css/main.90ffa5fb.chunk.css.map": "/lotto_app_2020/static/css/main.90ffa5fb.chunk.css.map",
+    "static/css/main.01ecd652.chunk.css.map": "/lotto_app_2020/static/css/main.01ecd652.chunk.css.map",
     "static/js/2.418a9b3e.chunk.js.LICENSE.txt": "/lotto_app_2020/static/js/2.418a9b3e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3eaefa46.js",
     "static/js/2.418a9b3e.chunk.js",
-    "static/css/main.90ffa5fb.chunk.css",
-    "static/js/main.bdaa5e8a.chunk.js"
+    "static/css/main.01ecd652.chunk.css",
+    "static/js/main.4bae8e0e.chunk.js"
   ]
 }
