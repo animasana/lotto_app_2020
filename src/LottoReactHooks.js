@@ -2,7 +2,7 @@ import React from 'react';
 import Lotto from './Lotto';
 import './LottoReact.css';
 
-const LottoReactHooks = (props) => {    
+function LottoReactHooks(props) {    
     const lotto = new Lotto(5, 6, 45);
     const [lottoStr, setLottoStr] = React.useState(lotto.str());
 

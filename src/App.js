@@ -1,8 +1,8 @@
 import React from 'react';
-import LottoReact from './LottoReactHooks';
+import LottoReactHooks from './LottoReactHooks';
 
 function App() {
-  return <LottoReact name='GiGSoft' />;
+  return <LottoReactHooks name='GiGSoft' />;
 }
 
 export default App;
