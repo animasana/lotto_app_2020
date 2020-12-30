@@ -5,15 +5,16 @@ import './LottoReact.css';
 function LottoReactHooks(props) {    
     const lotto = new Lotto(5, 6, 45);
     const [lottoStr, setLottoStr] = React.useState(lotto.str());
+    
+    const strToLines = (str) => {
+        return str.split('\n')
+                  .map((line, index) => <span key={'line-' + index}>{line}<br /></span>);
+    }
 
     const handleClick = (event) => {
         event.preventDefault();
         setLottoStr(lotto.str());  
-    }
-
-    const strToLines = (str) => {
-        return str.split('\n').map((line, index) => <span key={'line-' + index}>{line}<br /></span>);
-    }
+    }   
 
     const date = new Date();
     const yyyy = date.getFullYear();
