@@ -35,8 +35,7 @@ export default class Lotto {
         const pad = (n, fig) => {
             n += '';
             return n.length >= fig ? n : new Array(fig - n.length + 1).join('0') + n;
-        }
-        
+        }        
         return this.lottoMatrix.map(aRow => aRow.map(num => pad(num, fig)).join(' ')).join('\n');        
     }
 
