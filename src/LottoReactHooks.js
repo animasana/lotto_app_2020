@@ -3,7 +3,8 @@ import Lotto from "./Lotto";
 import "./LottoReact.css";
 
 function LottoReactHooks(props) {
-  const [lotto, setLotto] = React.useState(new Lotto().str());
+  const lottoObj = new Lotto();
+  const [lotto, setLotto] = React.useState(lottoObj.str());
 
   const strToLines = (str) => {
     return str.split("\n").map((line, index) => (
@@ -16,7 +17,7 @@ function LottoReactHooks(props) {
 
   const handleClick = (event) => {
     event.preventDefault();
-    setLotto(lotto.str());
+    setLotto(lottoObj.str());
   };
 
   const date = new Date();
