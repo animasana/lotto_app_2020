@@ -19,14 +19,14 @@ class LottoReact extends React.Component {
     this.setState({ lotto: this.lottoObj.str() });
   };
 
-  strToLines = (str) => {
-    return str.split("\n").map((line, index) => (
+  lottoToLines(lotto) {
+    return lotto.split("\n").map((line, index) => (
       <span key={"line-" + index}>
         {line}
         <br />
       </span>
     ));
-  };
+  }
 
   render() {
     return (
@@ -38,7 +38,7 @@ class LottoReact extends React.Component {
           <hr />
           <span>{this.props.name}</span>
           <hr />
-          <span>{this.strToLines(this.state.lotto)}</span>
+          <span>{this.lottoToLines(this.state.lotto)}</span>
         </div>
         <div className="buttonStyle">
           <button onClick={this.clickHandler}>로또 재발행</button>

@@ -9,18 +9,17 @@ const dd = date.getDate();
 
 const lottoObj = new Lotto();
 
-function LottoReactHooks(props) {
-  console.log("Clicked");
-  const [lotto, setLotto] = React.useState(lottoObj.str());
+function lottoToLines(lotto) {
+  return lotto.split("\n").map((line, index) => (
+    <span key={"line-" + index}>
+      {line}
+      <br />
+    </span>
+  ));
+}
 
-  const strToLines = (str) => {
-    return str.split("\n").map((line, index) => (
-      <span key={"line-" + index}>
-        {line}
-        <br />
-      </span>
-    ));
-  };
+function LottoReactHooks(props) {
+  const [lotto, setLotto] = React.useState(lottoObj.str());
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -36,7 +35,7 @@ function LottoReactHooks(props) {
         <hr />
         <span>{props.name}</span>
         <hr />
-        <span>{strToLines(lotto)}</span>
+        <span>{lottoToLines(lotto)}</span>
       </div>
       <div className="buttonStyle">
         <button onClick={handleClick}>로또 재발행</button>
